@@ -1,15 +1,4 @@
 <?php
-    session_start();
-    if(isset($_SESSION['username'])){
-        header('location:index.php');
-    }
-
-
-?>
-
-
-
-<?php
     $login = 0;
     $invalid = 0;
 
@@ -19,7 +8,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $sql = "Select * from `registration` where username = '$username' and password = '$password'";
+        $sql = "Select * from `registration` where username = '$username' and password = '".md5($password)."'";
 
         $result = mysqli_query($con,$sql);
 
@@ -36,6 +25,8 @@
         }
     }
 ?>
+
+
 
 
 

@@ -6,7 +6,7 @@
         include './partials/connect.php';
 
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
 
         $sql = "Select * from `registration` where username='$username'";
