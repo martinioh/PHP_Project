@@ -1,5 +1,6 @@
 # PHP_Project
 ## A basic e-commerce PHP website
+[Click here to see the project running.](https://martinioh.co.uk
 This was my first attempt at building a mockup of an e-commerce website selling games consoles using PHP and some basic Bootstrap.
 This is my first time using both of these in depth and below are a couple of images showing how the website looks. The data is all dynamically filled using PHP which pulls data for each product from PHPMyAdmin and displays these when you click on the product bringing you to a seperate page.
 
